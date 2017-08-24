@@ -1,0 +1,544 @@
+/*header 部分开始*/
+
+.content {
+    height: 175px;
+    background: url("../image/headerbgc.jpg") no-repeat;
+    border-bottom: 2px solid #9E076E;
+}
+
+.content_top {
+    padding: 12px 50px;
+}
+
+.logo {
+    width: 124px;
+    height: 29px;
+    background: url("../image/logo.png") no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    padding-right: 20px;
+    float: left;
+
+}
+
+.content_tl span {
+    float: left;
+}
+
+.content_tl span a {
+    margin: 5px;
+    line-height: 2.5em;
+    color: white;
+    font-size: 12px;
+}
+
+.content_tr .choose_topic, .content_tr .choose_hotel {
+    width: 135px;
+    height: 25px;
+    background-color: #882275;
+    margin: 0 10px;
+    float: left;
+    border: 1px solid #C390BA;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    color: #C68EAB;
+}
+
+.content_tr {
+    float: right;
+}
+
+.content_tr span {
+    color: white;
+    margin-left: 10px;
+}
+
+.choose_topic span, .choose_hotel span {
+    display: inline-block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #C390BA transparent transparent transparent;
+    /*小三角的位置不对*/
+}
+
+#topicPark {
+    width: 135px;
+    height: 25px;
+    border: 1px solid #C390BA;
+}
+
+#parkMenu li, #hotelMenu li {
+
+    background-color: #882275;
+
+}
+
+#parkMenu li a, #hotelMenu li a {
+    color: #e4fffa;
+    font-size: 12px;
+}
+
+/*header 部分结束*/
+
+/*导航条部分开始*/
+.nav_list {
+    height: 74px;
+    border-bottom: 4px solid #B60F89;
+    position: relative;
+}
+
+.nav_list .logoBest {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    background: url(../image/navlogo.png) no-repeat;
+    margin-left: 180px;
+    float: left;
+    margin-top: 5px;
+    padding-left: 80px;
+
+}
+
+.nav_list span {
+    float: left;
+    width: 204px;
+    font-size: 18px;
+    line-height: 74px;
+    text-align: center;
+}
+
+.nav_list .s1, .nav_list .s2, .nav_list .s3, .nav_list .s4, .nav_list .s5 {
+    border-bottom: 4px solid #EA9500;
+    border-left: 1px solid #E7E7E7;
+    color: #EA9500;
+}
+
+.nav_list .s2 {
+    border-bottom: 4px solid #E42383;
+    color: #E42383;
+
+}
+
+.nav_list .s3 {
+    border-bottom: 4px solid #3F8804;
+    color: #3F8804;
+
+}
+
+.nav_list .s4 {
+    border-bottom: 4px solid #188ED1;
+    color: #188ED1;
+}
+
+.nav_list .s5 {
+    border-bottom: 4px solid #AA24DB;
+    border-right: 1px solid #E7E7E7;;
+    color: #AA24DB;
+
+}
+
+.nav_list .s6 {
+    width: 330px;
+    border-bottom: 4px solid #B60F89;
+    color: #B60F89;
+    font-family: consolas;
+    /*两个大于号的字体不好看 */
+}
+
+.s6:hover {
+    color: #3F8804;
+}
+
+#atuoDp1 {
+    width: 204px;
+    height: 280px;
+    background-color: #EA9500;
+    position: absolute;
+    left: 300px;
+    top: 74px;
+    z-index: 3;
+}
+
+#navButtom {
+    width: 100%;
+    height: 280px;
+    background-color: #fff;
+    opacity: .8;
+    position: absolute;
+    top: 74px;
+    z-index: 2;
+    display: none;
+}
+
+.nav-contain {
+    width: 1026px;
+    height: 100%;
+    margin: 0 440px;
+}
+
+.nav-contain .box {
+    padding-top: 30px;
+    width: 205px;
+    height: 250px;
+    background-color: #f0f;
+    float: left;
+}
+
+.nav-contain .box a {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: #1d1d1d;
+    font-weight: 700;
+}
+
+.nav-contain .Park-list {
+    background: #edb34d;
+}
+
+.nav-contain .yanchu-list {
+    background: #f36fb0;
+}
+
+.nav-contain .acative-list {
+    background: #6fb834;
+
+}
+
+.nav-contain .server-list {
+    background: #42aae5;
+}
+
+.nav-contain .online-list {
+    background: #c75eed;
+}
+
+.nav-contain .Park-list a:hover {
+    background: #f38e1f;
+}
+
+.nav-contain .yanchu-list a:hover {
+    background: #ea1f6c;
+}
+
+.nav-contain .acative-list a:hover {
+    background: #179413;
+}
+
+.nav-contain .server-list a:hover {
+    background: #1f87dd;
+}
+
+.nav-contain .online-list a:hover {
+    background: #a733e7;
+}
+
+/*导航条部分结束*/
+
+/*banner begin*/
+
+.banner {
+    width: 1920px;
+    height: 652px;
+    position: relative;
+}
+
+.screen {
+    width: 1920px;
+    height: 652px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen li {
+    width: 1920px;
+    height: 652px;
+    overflow: hidden;
+    float: left;
+}
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 7680px;
+}
+
+.banner ol {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    line-height: 15px;
+    text-align: center;
+    margin-left: -35px;
+}
+
+.banner ol li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #a6a6a6;
+    border: 4px solid #c9c9c9;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: #c9c9c9 1px 1px 1px;
+}
+
+.banner ol li.current {
+    background: #6a6a6a;
+}
+
+#arr span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    margin-top: -30px;
+    background: #000;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 40px;
+    color: #fff;
+    opacity: 0.5;
+    border: 3px solid #fff;
+}
+
+#arr #right {
+    right: 60px;
+    left: auto;
+}
+
+.mainbg {
+    width: 100%;
+    height: 1494px;
+    background: url("../image/mainbg1.jpg") no-repeat;
+    position: relative;
+    background-color: #c4e5ff;
+}
+
+.xxpj {
+    position: absolute;
+    top: 473px;
+    left: 555px;
+    color: #300202;
+    font-size: 19px;
+}
+
+.yysj {
+    position: absolute;
+    top: 473px;
+    right: 540px;
+    color: #300202;
+    font-size: 19px;
+}
+
+.xxpj:hover, .yysj:hover {
+    color: #fff;
+}
+
+#yun {
+    width: 304px;
+    height: 182px;
+    background: url("../image/goupiaoyun.png") no-repeat;
+    position: absolute;
+    left: 300px;
+    top: 400px;
+    z-index: 11;
+    cursor: pointer;
+
+}
+
+#qiqiu {
+    width: 304px;
+    height: 182px;
+    background: url("../image/qiqiu.png") no-repeat;
+    position: absolute;
+    right: 190px;
+    top: 156px;
+}
+
+.piaojialink, .xiangxilink {
+    font-size: 20px;
+    position: absolute;
+    top: 1125px;
+    color: #000000;
+    z-index: 10;
+}
+
+.piaojialink {
+    left: 550px;
+
+}
+
+.xiangxilink {
+    right: 550px;
+}
+
+.xiangxilink:hover {
+    color: #fff;
+}
+
+.piaojialink:hover {
+    color: #fff;
+}
+
+.video {
+    width: 440px;
+    height: 411px;
+    position: absolute;
+    left: 741px;
+    top: 142px;
+}
+
+.video-topic {
+    width: 440px;
+    height: 317px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #000000;
+}
+
+.video-topic video {
+    width: 440px;
+    height: 317px;
+
+}
+
+.vid-list {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    right: -15px;
+}
+
+.vid-list span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    cursor: pointer;
+    background: url("../image/icon-common.png") -165px -24px no-repeat;
+    margin-left: 2px;
+}
+
+.vid-tag {
+    height: 84px;
+    background: url(../image/bobot.jpg) no-repeat;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.vid-tag span {
+    display: none;
+
+}
+
+.vid-tag .il {
+    display: inline;
+}
+
+.piaojia, .time {
+    font: 400 18px/38px "微软雅黑";
+    color: #FFFFDC;
+    position: absolute;
+    cursor: pointer;
+}
+
+.time:hover {
+    font-size: 20px;
+    left: 1223px;
+    font-weight: 500;
+}
+
+.piaojia:hover {
+    font-size: 20px;
+    left: 495px;
+    font-weight: 500;
+}
+
+.piaojia {
+    left: 505px;
+    top: 350px;
+}
+
+.time {
+    left: 1233px;
+    top: 350px;
+}
+
+/*推荐路线部分*/
+.way {
+    position: absolute;
+    top: 636px;
+    left: 450px;
+    width: 1100px;
+    height: 512px;
+    z-index: 10;
+    padding-left: 95px;
+
+}
+
+.way .arr-l, .way .arr-r {
+    width: 62px;
+    height: 60px;
+    cursor: pointer;
+
+}
+
+.way .arr-l {
+    background: url("../image/icon-common.png") 0px -66px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -33px;
+}
+
+.way .arr-r {
+    background: url("../image/icon-common.png") -63px -66px;
+    position: absolute;
+    top: 50%;
+    left: 430px;
+    margin-top: -33px;
+}
+
+.way .pic {
+    width: 312px;
+    height: 436px;
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+    box-shadow:3px 3px 3px #f4f4f4;
+
+}
+
+.way .pic ul {
+    width: 945px;
+    height: 436px;
+    position: absolute;
+}
+
+.way .pic li {
+    width: 312px;
+    height: 436px;
+    overflow: hidden;
+    float: left;
+}
+
+
+
+
+
+
+
+
+

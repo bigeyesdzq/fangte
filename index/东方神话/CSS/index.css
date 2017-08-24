@@ -1,0 +1,363 @@
+/*nav begin*/
+/*body {*/
+    /*overflow: hidden;*/
+/*}*/
+body{
+    width: 100%;
+    height: 8000px;
+    /*overflow: hidden;*/
+}
+.nav {
+    height: 45px;
+    /*width: 100%;*/
+    background-color: #8E816A;
+}
+.logo_l {
+    width: 123px;
+    height: 30px;
+    margin-left: 40px;
+    padding-top: 9px;
+    float: left;
+}
+.logo_z {
+    float: left;
+    line-height: 45px;
+    margin-left: 26px;
+}
+.logo_z li {
+    float: left;
+    margin-right: 40px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+.logo_z li a {
+    color: #fff;
+}
+.logo_r {
+    float: left;
+    margin-left: 60px;
+}
+.garden {
+    float: left;
+}
+.garden_top ,.hotel_top{
+    width: 105px;
+    height: 25px;
+    border: 1px solid #fff;
+    line-height: 25px;
+    padding-left: 30px;
+    margin-top: 9px;
+}
+.garden_top a ,.hotel_top a{
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+.garden_top a:hover {
+    color: #fff;
+}
+.garden_top em ,.hotel_top em{
+    display: inline-block;
+    border: 4px solid #fff;
+    border-left-color: #8E816A;
+    border-right-color: #8E816A;
+    border-bottom-color: #8E816A;
+    margin-left: 10px;
+}
+.garden_bot {
+    height: 0;
+    overflow: hidden;
+}
+.garden_bot ul li,.hotel_bot ul li {
+    padding-left: 35px;
+    line-height: 27px;
+}
+.garden_bot ul li a ,.hotel_bot ul li a{
+    font-family: "Microsoft YaHei";
+    color: #fff;
+}
+.garden_bot ul li a:hover {
+    color: #fff;
+}
+.garden1 {
+    position: absolute;
+    top: 36px;
+    left: 818px;
+    display: none;
+}
+.garden1 li {
+    width: 102px;
+    height: 28px;
+    background-color: #7D715B;
+    line-height: 28px;
+    padding-left: 35px;
+}
+
+
+
+
+.hotel {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.hotel_top a:hover {
+    color: #fff;
+}
+.hotel_bot {
+    height: 0;
+    overflow: hidden;
+}
+.logo_r span {
+    color: #fff;
+    line-height: 45px;
+    font-family: "Microsoft YaHei";
+}
+
+
+
+
+
+
+/*nav finish*/
+
+/*banner1 begin*/
+.banner1 {
+    width: 1400px;
+    height: 985px;
+    background: url("../images/dfbg1.jpg") no-repeat center top;
+    position: relative;
+    z-index: -1;
+    margin: 0 auto;
+}
+.ban1 {
+    width: 621px;
+    height: 684px;
+    position: absolute;
+    left: -621px;
+    top: 276px;
+    /*opacity: 0;*/
+}
+
+/*banner1 finish*/
+
+/*banner2 begin*/
+.banner2 {
+    height: 886px;
+    background: url("../images/dfbg2.jpg") no-repeat center top;
+    /*position: relative;*/
+    overflow: hidden;
+}
+.ban2 {
+    margin: 0 auto;
+    width: 1000px;
+    height: 886px;
+    position: relative;
+}
+.banner2 .story {
+    width: 298px;
+    height: 525px;
+    position: absolute;
+    padding: 5px 20px 0;
+    left:-39px;
+    top: 210px;
+    text-indent: 2em;
+    /*line-height: 30px;*/
+}
+.banner2 .story img {
+    position: absolute;
+    left: -47px;
+    top: 560px;
+
+}
+.story p {
+    font: 14px/28px "Microsoft YaHei";
+}
+.banner2 img {
+    position: absolute;
+    right: -620px;
+    top: 460px;
+}
+/*banner2 finish*/
+
+/*banner3 begin*/
+.banner3 {
+    height: 811px;
+    width: 1430px;
+    background: url("../images/dfbg3.jpg") no-repeat center top;
+    /*padding-left: 85px;*/
+    position: relative;
+    margin: 0 auto;
+    /*z-index: 100;*/
+    overflow: hidden;
+}
+.banner3 .pic {
+    width: 1263px;
+    overflow: hidden;
+    height: 811px;
+    position: absolute;
+    /*margin: 0 auto;*/
+    left: 50%;
+    margin-left: -630px;
+}
+.pic ul {
+    width: 4000px;
+    position: absolute;
+    /*left: -1280px;*/
+}
+.pic li {
+    width: 320px;
+    height: 676px;
+    padding-top: 150px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+.pic li img {
+    position: relative;
+}
+.pic li div {
+    position: absolute;
+    left: 50px;
+    bottom: 290px;
+    /*display: none;*/
+    opacity: 0;
+}
+.banner3 .arr_left{
+    width: 63px;
+    height: 109px;
+    position: absolute;
+    left: 15px;
+    top: 240px;
+    cursor: pointer;
+}
+/*banner3 finish*/
+
+/*banner4 begin*/
+.banner4 {
+    height: 890px;
+    width: 1350px;
+    background: url("../images/dfbg4.jpg") no-repeat center top;
+    position: relative;
+    margin: 0 auto;
+}
+.cuture {
+    width: 440px;
+    height: 516px;
+    position: absolute;
+    right: 0;
+    top: 180px;
+}
+.h1,.h2,.h3 {
+    width: 440px;
+    height: 516px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.h1 {
+    opacity: 1;
+}
+.h2 {
+    opacity: 0;
+}
+.h3 {
+    opacity: 0;
+}
+
+.tv {
+    position: absolute;
+    left: 115px;
+    top: 250px;
+    width: 642px;
+    height: 393px;
+    background: url("../images/m2.jpg") no-repeat;
+}
+.mask {
+    width: 642px;
+    height: 393px;
+    background-color: black;
+    opacity: 0;
+    cursor: pointer;
+}
+.mask h1 {
+    font: 700 24px/393px "Simsun";
+    margin-left: 270px;
+    color: #fff;
+}
+.mask h1 a {
+    color: #fff;
+}
+.mask h1 a:hover {
+    color: #fff;
+}
+.btn1,.btn2,.btn3 {
+    width: 298px;
+    height: 106px;
+    position: absolute;
+    top: 790px;
+    background: url("../images/m4hover.png");
+}
+.btn1 {
+    left: 135px;
+}
+.btn2 {
+    left: 500px;
+}
+.btn3 {
+    left: 870px;
+}
+.btn1 h2,.btn2 h2,.btn3 h2 {
+    /*line-height: 106px;*/
+    padding-left: 55px;
+    font: 400 48px/106px "Microsoft YaHei";
+    color: #8D5E0F;
+}
+
+/*banner4 finish*/
+
+/*banner5 begin*/
+.banner5 {
+    height: 554px;
+    background: url("../images/dfbg5.jpg") no-repeat center top;
+}
+/*banner5 finish*/
+
+/*foot begin*/
+.foot {
+    height: 110px;
+    background-color: #8E816A;
+    color: #fff;
+}
+.foot_top {
+    padding-top: 40px;
+    padding-left: 110px;
+    margin-bottom: 5px;
+}
+.foot_top span {
+    /*display: inline-block;*/
+    float: left;
+    margin:0 10px;
+}
+.foot_top li {
+    float: left;
+}
+.foot_top li a {
+    color: #fff;
+}
+.foot_bottom .p {
+  margin-bottom: 5px;
+}
+/*foot finish*/
+
+/*return_top begin*/
+.back {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    /*display: none;*/
+    opacity: 0;
+    cursor: pointer;
+}
+/*return_top finish*/
+

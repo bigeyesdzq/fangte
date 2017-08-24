@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>方特奔跑吧兄弟主题官网</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*动态背景部分*/
+        .j-box > a {
+            cursor: default;
+        }
+
+        .opacity {
+            opacity: 0;
+            display: none;
+        }
+
+        #box > li {
+            position: absolute;
+            overflow: hidden;
+
+        }
+        body{
+            overflow: hidden;
+
+        }
+
+        html, body li{
+            height:100%;
+            width: 100%;
+
+        }
+
+        /*导航部分*/
+        ul {
+            height: 110px;
+            z-index: 200;
+         left: 50%;
+            margin-left: -500px;
+            position: fixed;
+            top: 20px;
+        }
+
+        ul > li {
+            width: 246px;
+            height: 110px;
+            float: left;
+        }
+
+        #gb {
+            width: 60px;
+            height: 236px;
+            background-color: #fff;
+            position: absolute;
+            top: 25%;
+            right: 0;
+            border-top: 1px solid red;
+            border-left: 1px solid red;
+            z-index: 20;
+        }
+
+        /*左边广告部分*/
+        #gb > div {
+            background-color: #F1F1F1;
+            height: 78px;
+            border-bottom: 1px solid gray;
+            z-index: 5;
+        }
+
+        #hq-gb em {
+            text-decoration: none;
+            display: block;
+            width: 43px;
+            height: 42px;
+            background: url("images/shouyeimg3.png") no-repeat -26px -50px;
+            margin: 0 auto;
+            position: relative;
+            top: 16px;
+        }
+
+        #hq-gb img {
+            display: none;
+            position: absolute;
+            left: -274px;
+            top: 0;
+
+        }
+
+        #x-gb img {
+            display: none;
+            position: absolute;
+            left: -274px;
+            top: 156px;
+        }
+
+        #tm-gb img {
+            display: none;
+            position: absolute;
+            left: -274px;
+            top: 78px;
+        }
+
+        #tm-gb em {
+            text-decoration: none;
+            display: block;
+            width: 37px;
+            height: 44px;
+            background: url("images/shouyeimg3.png") no-repeat -85px -49px;
+            left: 16px;
+            position: relative;
+            top: 20px;
+        }
+
+        #x-gb em {
+            text-decoration: none;
+            display: block;
+            width: 43px;
+            height: 45px;
+            background: url("images/shouyeimg3.png") no-repeat -127px -47px;
+            position: relative;
+            top: 20px;
+            left: 16px;
+        }
+
+        /* 上下盒子移动 部分*/
+        #ft-js {
+            width: 267px;
+            height: 250px;
+            position: absolute;
+            top: 220px;
+            background-image: url("images/ggbg.png");
+            text-align: center;
+            padding: 20px;
+            z-index: 5;
+        }
+
+        #ft-js h3 {
+            margin-top: -5px;
+            color: #Fff;
+            font-size: 22px;
+        }
+
+        #ft-js .js-XX {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 20px;
+            top: 35px;
+            border-radius: 50%;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 30px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #FD7C3B;
+            cursor: pointer;
+        }
+
+        .js-Db {
+            width: 20px;
+            height: 20px;
+            left: 220px;
+            top: -10px;
+            background: url("images/ggbgjt.png") no-repeat;
+            position: relative;
+            opacity: 0;
+        }
+
+        #ft-js p {
+            text-indent: 2em;
+            font-size: 12px;
+            margin:30px 20px 0 20px;
+            line-height: 20px;
+            color: gray;
+            display: inline-block;
+        }
+
+        .js-Gp {
+            width: 305px;
+            height: 60px;
+            position: relative;
+            top: 0;
+            left: -20px;
+            background: url("images/gupiaodm.png");
+            text-align: center;
+        }
+        .js-Gp b {
+            line-height: 60px;
+            color: #FD7A39;
+            font-size:20px;
+        }
+
+        #hq-gb:hover em {
+            background: url("images/shouyeimg3.png") no-repeat -26px 0;
+        }
+
+        #tm-gb:hover em {
+            background: url("images/shouyeimg3.png") no-repeat -87px 0;
+        }
+
+        #x-gb:hover em {
+            background: url("images/shouyeimg3.png") no-repeat -125px 0;
+        }
+
+        li div p {
+            line-height: 40px;
+            display: block;
+            height: 40px;
+            background-color: #fff;
+            color: #000000;
+            font-family: "微软雅黑";
+        }
+
+        /* 导航下拉列表*/
+        #hl-js p:hover {
+            background-color: #D1F201;
+        }
+
+        li div span {
+            height: 6px;
+            display: block;
+            background: url("images/menu_bg.png") no-repeat;
+        }
+
+        #hl-js {
+            height: 0;
+            width: 206px;
+            margin-top: -14px;
+            text-align: center;
+            margin-left: 15px;
+            overflow: hidden;
+        }
+
+        #mh-js p:hover {
+            background-color: #9E0077;
+        }
+
+        #mh-js {
+            height: 0;
+            width: 206px;
+            margin-top: -14px;
+            text-align: center;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+
+        #df-js {
+            height: 0;
+            width: 206px;
+            margin-top: -14px;
+            text-align: center;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+
+        #df-js p:hover {
+            background-color: #C02000;
+        }
+
+        #sh-js {
+            height: 0;
+            width: 206px;
+            margin-top: -14px;
+            text-align: center;
+            margin-left: 25px;
+            overflow: hidden;
+        }
+
+        #sh-js p:hover {
+            background-color: #00B6AA;
+        }
+
+        /*底部部分*/
+        #db-gp {
+            width: 100%;
+            height: 240px;
+            position: relative;
+            bottom: 0;
+            top: 374px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        #db-gp p {
+            position: relative;
+            top: -65px;
+            line-height: 20px;
+            color: #ffffff;
+        }
+
+        #db-gp a {
+            color: #ffffff;
+        }
+
+        #db-gp a:hover {
+            text-decoration: underline;
+        }
+
+        #db-gp span a {
+            text-decoration: underline;
+        }
+        #ft-js p:hover{
+            text-decoration:underline;
+        }
+
+        /*底部logo摆放*/
+        #logo1 {
+            width: 93px;
+            height: 74px;
+            position: absolute;
+            top: 215px;
+            left: 110px;
+            background: url("images/logo.png");
+        }
+
+        #logo2 {
+            width: 85px;
+            height: 68px;
+            position: absolute;
+            top: 215px;
+            left: 220px;
+            background: url("images/logo_dm.png");
+        }
+
+        #logo3 {
+            position: absolute;
+            left: 78%;
+            top: 225px;
+        }
+
+        #logo3 > li {
+            width: 58px;
+            height: 58px;
+            float: left;
+        }
+
+        #gp-AN {
+            width: 275px;
+            height: 83px;
+            position: absolute;
+            top: 134px;
+            left: 50%;
+            margin-left: -100px;
+            background: url("images/gpa.gif");
+        }
+        #gp-AN:hover{
+            background: url("images/gpah.png");
+        }
+    </style>
+</head>
+<body>
+<!--导航部分-->
+<ul>
+    <li id="hl-XM">
+        <a href="郑州方特/index.html">
+            <img src="images/top1.png" alt="" style="width: 100%;height: 100%;"/></a>
+        <div id="hl-js">
+            <span></span>
+
+            <a href="" onclick="return false">
+                <p>芜湖方特欢乐世界</p>
+            </a>
+            <span></span>
+
+            <a href="" onclick="return false">
+                <p>郑州方特欢乐世界</p>
+            </a>
+            <span></span>
+
+            <a href="" onclick="return false">
+                <p>泰安方特欢乐世界</p>
+            </a>
+            <span></span>
+
+            <a href="" onclick="return false">
+                <p>株洲方特欢乐世界</p>
+            </a>
+            <span></span>
+
+            <a href="" onclick="return false">
+                <p>沈阳方特欢乐世界</p>
+            </a>
+            <span></span>
+
+            <a href="" onclick="return false">
+                <p>天津方特欢乐世界</p>
+            </a>
+            <span></span>
+
+            <a href="" onclick="return false">
+                <p>大同方特欢乐世界</p>
+            </a>
+            <span></span>
+
+            <a href="" onclick="return false">
+                <p>嘉谷方特欢乐世界</p>
+            </a>
+            <span></span>
+
+            <a href="" onclick="return false">
+                <p>汕头方特欢乐世界</p>
+            </a>
+        </div>
+
+    </li>
+    <li id="mh-XM">
+        <a href="方特项目梦幻王国部分/index.html"><img src="images/top2.png" alt="" style="width: 100%;height: 100%;"/>
+        </a>
+
+        <div id="mh-js">
+            <span></span>
+            <a href="" onclick="return false">
+                <p>芜湖方特梦幻王国</p>
+            </a>
+            <span></span>
+            <a href="" onclick="return false">
+                <p>天津方特梦幻王国</p>
+            </a>
+            <span></span>
+            <a href="" onclick="return false">
+                <p>汕头方特梦幻王国</p>
+            </a>
+            <span></span>
+            <a href="" onclick="return false">
+                <p>嘉谷方特梦幻王国</p>
+            </a>
+            <span></span>
+            <a href=""  onclick="return false">
+                <p>大同方特梦幻王国</p>
+            </a>
+        </div>
+
+    </li>
+    <li id="df-XM">
+        <a href="东方神话/index.html" target="_blank">
+            <img src="images/top3.png" alt="" style="width: 100%;height: 100%;"/>
+            <div id="df-js">
+                <span></span>
+                <a href="" onclick="return false">
+                    <p>芜湖方特东方神画</p>
+                </a>
+                <span></span>
+                <a href="" onclick="return false">
+                    <p>济南方特东方神画</p>
+                </a>
+                <span></span>
+                <a href=""  onclick="return false">
+                    <p>宁波方特东方神画</p>
+                </a>
+                <span></span>
+                <a href=""  onclick="return false">
+                    <p>厦门方特东方神画</p>
+                </a>
+            </div>
+        </a>
+    </li>
+    <li id="sh-XM">
+        <a href="HOME/index.html" target="_blank">
+            <img src="images/top4.png" alt="" style="width: 100%;height: 100%;"/>
+        </a>
+        <div id="sh-js">
+            <span></span>
+            <a href="" onclick="return false">
+                <p>芜湖方特水上乐园</p>
+            </a>
+            <span></span>
+            <a href=""  onclick="return false">
+                <p>宁泼方特水上乐园</p>
+            </a>
+        </div>
+    </li>
+</ul>
+<!--首页 动态大背景-->
+<div class="shouye" id="box">
+    <li class="j-box">
+            <img src="images/20175915315283.jpg" alt="" style="width: 100%;height:120%"/>
+    </li>
+    <li class="j-box opacity">
+            <img src="images/201752104927110.jpg" alt="" style="width: 100%;height:120%"/>
+    </li>
+    <li class="j-box">
+            <img src="images/201752104927110.jpg" alt="" style="width: 100%;height:120%"/>
+    </li>
+    <li class="j-box">
+            <img src="images/201762115311828.jpg" alt="" style="width: 100%;height:120%"/>
+    </li>
+    <li class="j-box">
+            <img src="images/2017410155514849.jpg" alt="" style="width: 100%;height:120%"/>
+    </li>
+    <li class="j-box">
+            <img src="images/2017531114721901.jpg" alt="" style="width: 100%;height:100%"/>
+    </li>
+</div>
+<!--广告部分  em  是精灵图-->
+<div id="gb">
+    <div id="hq-gb">
+        <a href="">
+            <em id="hqJl"></em>
+        </a>
+        <img src="images/shouyeimg22.png" alt="" id="hq-gbImg"/>
+    </div>
+
+    <div id="tm-gb">
+        <a href="">
+            <em id="tmJl"></em>
+        </a>
+        <img src="images/shouyeimg1.png" alt="" id="tm-gbImg"/>
+    </div>
+    <div id="x-gb">
+        <a href="">
+            <em id="xJl"></em>
+        </a>
+        <img src="images/shouyeimg2.png" alt="" id="x-gbImg"/>
+    </div>
+</div>
+<!--上下移动介绍框-->
+<div id="ft-js">
+    <h3>方特华强</h3>
+
+    <a href="方特 新闻公告/indexs.html"><p>深圳华强方特文化科技集团股份有限公司是国内知名的大型文化科技集团，专业从事文化科技产业，连续七年获评"中国文化企业30强"。以“方特”为品牌的大型文化科技主题乐园是其主要产业，国内已建成并投入运营的&quot;方特欢乐世界&quot;、&quot;方特梦幻王国&quot;、&quot;方特东方神画&quot;主题乐园有十余个。
+    </p></a>
+
+    <div class="js-XX" id="js-XX">
+        ×
+    </div>
+    <div class="js-Db" id="js-Db"></div>
+    <div class="js-Gp"><b>股票代码：834793</b></div>
+</div>
+<!--底部部分-->
+<div id="db-gp">
+    <img src="images/bott.png" alt="" style="width: 100%;height: 124%"/>
+
+    <p><a href="">精彩活动</a> | <a href="">关于方特</a>| <a href="">新闻公告</a>|<a href="">联系我们</a>| <a href="">网站地图</a>| <a
+            href="">华强方特</a>| <a href="">方特动漫</a>| <a href="">熊出没官方旗舰店</a><br/>
+        版权所有：华强方特（深圳）智能技术有限公司 <span><a href="">《增值电信业务经营许可证》</a> 许可证编号：<a href="">粤B2-20090023 备案号：粤ICP备05131581号-3</a> <br/>
+    <a href="">息网络传播视听节目许可证 1910586号 网络文化经营许可证</a>　粤网文[2012]0185-026号　　<a href="">互联网出版许可证</a> 新出网证(粤)字036号</span></p>
+
+    <div id="logo1"></div>
+    <div id="logo2"></div>
+    <div id="logo3">
+        <li><img src="images/gameRFID.png" alt="" style="width: 100%;height: 100%"/></li>
+        <li><img src="images/police00.gif" alt="" style="margin-top: 6px"/></li>
+        <li><img src="images/police0.gif" alt="" style="width: 100%;height: 100% "/></li>
+        <li><img src="images/govIcon.gif" alt="" style="width: 60%;height: 80%;margin-top: 10px"/></li>
+    </div>
+    <a href="方特购票/index.html" target="_blank">
+        <div id="gp-AN"></div>
+    </a>
+</div>
+<script>
+    window.onload = function () {
+        //下拉列表 1
+        var hlXM = document.getElementById("hl-XM");
+        var hlJS = document.getElementById("hl-js");
+        hlXM.onmouseenter = function () {
+            animate(hlJS, {"height": 430})
+        };
+        hlXM.onmouseleave = function () {
+            animate(hlJS, {"height": 0})
+        };
+        //下拉列表 2
+        var mhXM = document.getElementById("mh-XM");
+        var mhJS = document.getElementById("mh-js");
+        mhXM.onmouseenter = function () {
+            animate(mhJS, {"height": 240})
+        }
+        mhXM.onmouseleave = function () {
+            animate(mhJS, {"height": 0})
+        }
+        //下拉列表 3
+        var dfXM = document.getElementById("df-XM");
+        var dfJS = document.getElementById("df-js");
+        dfXM.onmouseenter = function () {
+            animate(dfJS, {"height": 190})
+        }
+        dfXM.onmouseleave = function () {
+            animate(dfJS, {"height": 0})
+        }
+        //下拉列表 4
+        var shXM = document.getElementById("sh-XM");
+        var shJS = document.getElementById("sh-js");
+        shXM.onmouseenter = function () {
+            animate(shJS, {"height": 100})
+        }
+        shXM.onmouseleave = function () {
+            animate(shJS, {"height": 0})
+        }
+        //动态背景部分
+        var box = document.getElementById("box");
+        var lis = box.children;
+        var index = lis.length;
+        setInterval(function () {
+            index--;
+            animate(lis[index], {"opacity": 0});
+            if (index == 1) {
+                lis[0].style.opacity = 1;
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].style.opacity = 1;
+                }
+                index = lis.length;
+            }
+        }, 5000);
+        //广告部分
+        //第一部分
+        var gbhq = document.getElementById("hq-gb");
+        var gbhqImg = document.getElementById("hq-gbImg");
+        gbhq.onmouseenter = function () {
+            gbhqImg.style.display = "block";
+            animate(gbhqImg, {"left": -245});
+        };
+        gbhq.onmouseleave = function () {
+            gbhqImg.style.display = "none";
+            gbhqImg.style.left = -274 + "px";
+        };
+        //第二部分
+        var gbtm = document.getElementById("tm-gb");
+        var gbtmImg = document.getElementById("tm-gbImg");
+        gbtm.onmouseenter = function () {
+            gbtmImg.style.display = "block";
+            animate(gbtmImg, {"left": -245});
+        };
+        gbtm.onmouseleave = function () {
+            gbtmImg.style.display = "none";
+            gbtmImg.style.left = -274 + "px";
+        };
+        //第三部分
+        var gbx = document.getElementById("x-gb");
+        var gbxImg = document.getElementById("x-gbImg");
+        gbx.onmouseenter = function () {
+            gbxImg.style.display = "block";
+            animate(gbxImg, {"left": -245});
+            gbx.style.backgroundColor = "#960678";
+        };
+        gbx.onmouseleave = function () {
+            gbxImg.style.display = "none";
+            gbxImg.style.left = -274 + "px";
+            gbx.style.backgroundColor = " #F1F1F1";
+        };
+
+        //上下移动 盒子部分
+        //点击x  使父盒子隐藏
+        var jsXX = document.getElementById("js-XX");
+        jsXX.onclick = function (event) {
+            ftJs.style.display = "none";
+            event.stopPropagation();
+        };
+        //递归控制大盒子来回上下移动
+        var ftJs = document.getElementById("ft-js");
+
+        function ftJsF() {
+            animate1(ftJs, {"top": 250}, function () {
+                animate1(ftJs, {"top": 200}, function () {
+                    ftJsF();
+                });
+            });
+        };
+        ftJsF();
+        //递归控制小盒子来回移动
+        var jsDb = document.getElementById("js-Db");
+
+        function jsDbF() {
+            animate1(jsDb, {"left": 255, "opacity": 1}, function () {
+                jsDb.style.left = 220 + "px";
+                jsDb.style.opacity = 0;
+                jsDbF();
+            });
+        };
+        jsDbF();
+
+
+//函数的 修改透明度   移动动画 化
+        function animate(obj, json, fn) {
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function () {
+                var flag = true;
+                for (var k in json) {
+                    if (k === "opacity") {//特殊处理
+                        //var leader = parseInt(getStyle(obj, k)) || 0;
+                        var leader = getStyle(obj, k) * 100;//1
+                        // 0 || 1 结果是1 那么如果透明度当前的值是0 就会变成1
+                        //所以这里不能给默认值 而且也没有必要
+                        //透明度没有单位px 所以也不用parseInt 参与运算自动变为数字
+                        var target = json[k] * 100;//0.5
+                        var step = (target - leader) / 10;//0.5-1=-0.5
+                        step = step > 0 ? Math.ceil(step) : Math.floor(step);//-1
+                        leader = leader + step;
+                        //obj.style[k] = leader + "px";
+                        obj.style[k] = leader / 100;//opacity没有单位
+                    } else if (k === "zIndex") {
+                        obj.style.zIndex = json[k];//无需渐变 直接设置即可
+                    } else {
+                        var leader = parseInt(getStyle(obj, k)) || 0;
+                        var target = json[k];
+                        var step = (target - leader) / 5;
+                        step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                        leader = leader + step;
+                        obj.style[k] = leader + "px";
+                    }
+                    if (leader !== target) {
+                        flag = false;
+                    }
+                }
+                if (flag) {
+                    clearInterval(obj.timer);
+                    if (fn) {//如果有才调用
+                        fn();//动画执行完成后执行
+                    }
+                }
+            }, 15);
+        }
+
+        function animate1(obj, json, fn) {
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function () {
+                var flag = true;
+                for (var k in json) {
+                    if (k === "opacity") {//特殊处理
+                        //var leader = parseInt(getStyle(obj, k)) || 0;
+                        var leader = getStyle(obj, k) * 100;//1
+                        // 0 || 1 结果是1 那么如果透明度当前的值是0 就会变成1
+                        //所以这里不能给默认值 而且也没有必要
+                        //透明度没有单位px 所以也不用parseInt 参与运算自动变为数字
+                        var target = json[k] * 100;//0.5
+                        var step = (target - leader) / 10;//0.5-1=-0.5
+                        step = step > 0 ? Math.ceil(step) : Math.floor(step);//-1
+                        leader = leader + step;
+                        //obj.style[k] = leader + "px";
+                        obj.style[k] = leader / 100;//opacity没有单位
+                    } else if (k === "zIndex") {
+                        obj.style. zIndex= json[k];//无需渐变 直接设置即可
+                    } else {
+                        var leader = parseInt(getStyle(obj, k)) || 0;
+                        var target = json[k];
+                        var step = (target - leader) / 25;
+                        step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                        leader = leader + step;
+                        obj.style[k] = leader + "px";
+                    }
+                    if (leader !== target) {
+                        flag = false;
+                    }
+                }
+                if (flag) {
+                    clearInterval(obj.timer);
+                    if (fn) {//如果有才调用
+                        fn();//动画执行完成后执行
+                    }
+                }
+            }, 50);
+        }
+
+        function getStyle(obj, attr) {
+            if (window.getComputedStyle) {
+                return window.getComputedStyle(obj, null)[attr];
+            } else {
+                return obj.currentStyle[attr];
+            }
+        }
+    }
+</script>
+</body>
+</html>    

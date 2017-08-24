@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px/1.5 "Microsoft YaHei";
+    background-color: #3498DB;
+    width: 100%;
+    height: 100%;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.top {
+    width: 100%;
+    height: 35px;
+    background-color: #3498DB;
+    z-index: 100;
+}
+
+.top-c {
+    color: #fff;
+    line-height: 35px;
+}
+
+.top-l {
+    width: 270px;
+    float: left;
+    padding-left: 40px;
+}
+
+.top-r {
+    width: 620px;
+    float: right;
+}
+
+.top-zt {
+    float: left;
+    width: 130px;
+    height: 25px;
+    background-color: #2f85c3;
+    font-size: 12px;
+    border: 1px solid #95BCD9;
+    margin-top: 4px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.top-zt span {
+    padding-left: 5px;
+}
+
+.top-zt ul {
+    height: 0;
+    background-color: #2f85c3;
+    overflow: hidden;
+}
+
+.top-zt ul li a {
+    padding-left: 6px;
+    width: 124px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-zt ul a:hover {
+    background-color: #3498DB;
+}
+
+.gp {
+    width: 400px;
+    float: left;
+    padding: 3px 20px;
+}
+
+.top-zt em {
+    display: block;
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin: 8px 10px 0 0;
+    background: url(../images/ticket-icons.png) no-repeat -189px -15px;
+}
+
+.nav-tl {
+    width: 100%;
+    height: 96px;
+    background-color: #fff;
+}
+
+.nav {
+    height: 96px;
+    z-index: 90;
+}
+
+.logo {
+    width: 300px;
+}
+
+.logo img {
+    width: 200px;
+    float: left;
+    padding-top: 20px;
+}
+
+.nav-c {
+    width: 620px;
+    height: 50px;
+    margin-left: 140px;
+    float: left;
+}
+
+.nav-c a {
+    float: left;
+    font-size: 20px;
+    padding: 6px 24px;
+    color: #000;
+    margin: 27px 14px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.nav-c a:hover {
+    background-color: #fba81f;
+    color: #fff;
+}
+
+.city {
+    width: 170px;
+    float: left;
+    margin-top: 30px;
+}
+
+.city-now {
+    width: 75px;
+    font-size: 14px;
+    line-height: 30px;
+    float: left;
+}
+
+.cityName {
+    float: left;
+    width: 90px;
+}
+
+.city-in {
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #3498db;
+    position: relative;
+}
+
+.city-in em {
+    display: inline-block;
+    border: 5px solid #fff;
+    border-top-color: #3498db;
+    position: absolute;
+    top: 14px;
+    right: 8px;
+}
+.cityName ul {
+    height: 0;
+    margin-top: -14px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cityName ul li {
+    background-color: #ffffff;
+    border-left: 1px solid #3498db;
+    border-right: 1px solid #3498db;
+    width: 88px;
+    text-align: center;
+    color: #3498db;
+    cursor: pointer;
+}
+.cityName .first {
+    margin-top: 3px;
+    padding-top: 3px;
+}
+.cityName .last {
+    border-radius: 0 0 10px 10px;
+    border-bottom: 1px solid #3498db;;
+}
+
+
+.cityName li:hover {
+    color: #fff;
+    background-color: #3498db;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+.main {
+    height: 884px;
+    width: 1348px;
+    background: url(../images/index-bg.jpg) no-repeat center center;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.buy {
+    width: 770px;
+    height: 360px;
+    margin: 290px auto;
+    background: rgba(0, 0, 0, .6)
+}
+
+.buy h2 {
+    width: 710px;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 70px;
+    color: #fff;
+    text-align: center;
+    font: 40px "Microsoft YaHei";
+    border-bottom: 1px solid #FFFF4D;
+}
+
+.buy-city {
+    width: 412px;
+    height: 58px;
+    margin: 30px auto;
+}
+
+.buy-l {
+    width: 245px;
+    height: 58px;
+    float: left;
+    text-align: center;
+    font: 20px/58px "Microsoft YaHei";
+    background-color: #fff;
+    cursor: pointer;
+}
+.buy-l i {
+    font-style: normal;
+    text-decoration: none;
+
+}
+.buy-l em {
+    display: inline-block;
+    width: 15px;
+    height: 8px;
+    background: url(../images/ticket-icons.png) no-repeat -66px -17px;
+    margin-left: 30px;
+}
+
+.buy-r {
+    width: 150px;
+    height: 58px;
+    float: right;
+    text-align: center;
+    font: 20px/58px "Microsoft YaHei";
+    background-color: #FFFF4D;
+}
+
+.buy-r a {
+    display: inline-block;
+    padding: 0 35px;
+    text-decoration: none;
+    color: #000;
+}
+
+.adress li {
+    float: left;
+    width: 81px;
+    padding: 5px 0;
+    margin: 2px 0;
+    color: #fff;
+    font: 14px "Microsoft YaHei";
+}
+
+.adress ul {
+    height: 0;
+    overflow: hidden;
+    background-color: #3498db;
+}
+
+.adress li:hover {
+    background-color: #34495E;
+}
+#ad {
+    width: 250px;
+    height: 288px;
+    position: absolute;
+    left: 14px;
+    top: 190px;
+    padding: 0 30px;
+    background: url(../images/ggbg.png) no-repeat;
+}
+#ad h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#ad p {
+    font-size: 15px;
+    text-indent: 2em;
+}
+.ar {
+    width: 80px;
+    height: 350px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    margin-top: -140px;
+    background-color: #e33934;
+    border: 6px solid #fff;
+    border-radius: 5px;
+    padding-top: 15px;
+}
+.tk {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.tk:hover {
+    opacity: 0.8;
+}
+.line {
+    width: 60px;
+    height: 1px;
+    margin: 10px auto;
+    background-color: #fff;
+}
+.weixin {
+    width: 29px;
+    height: 23px;
+    margin: 0 auto 15px;
+    cursor: pointer;
+    position: relative;
+}
+.wx {
+    width: 138px;
+    height: 200px;
+    position: absolute;
+    right: 90px;
+    bottom: 36px;
+    display: none;
+}
+
+#wd_btn {
+    position: absolute;
+}
+.wx-b {
+    margin-bottom: -10px;
+}
+.weibo {
+    width: 26px;
+    height: 24px;
+    margin: 0 auto 15px;
+    cursor: pointer;
+}
+.wb {
+    width: 138px;
+    height: 200px;
+    position: absolute;
+    right: 120px;
+    top: 16px;
+    display: none;
+}
+#wb_btn {
+    position: absolute;
+}
+.wb-b {
+    margin-bottom: -10px;
+}
+.tel {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 15px;
+    cursor: pointer;
+}
+.tl {
+    position: absolute;
+    right: 60px;
+    bottom: 50px;
+    display: none;
+}
+.logo1 {
+    width: 31px;
+    height: 31px;
+    margin: 0 auto 15px;
+    cursor: pointer;
+}
+.lg {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    display: none;
+}
+#lg_btn {
+    border: 2px solid #e33934;
+}
+.footer {
+    height: 108px;
+    background-color: #34495E;
+}
+
+.footer-c {
+    text-align: center;
+    color: #fff;
+    font: 12px/24px "Microsoft YaHei";
+    padding: 30px;
+}
+
+.footer-c a {
+    color: #fff;
+    text-decoration: underline;
+}
+.hezi1 {
+    background-color: #3498db;
+    height: 75px;
+    width: 130px;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: -25px;
+    display: none;
+}
+.hezi1 a {
+    text-align: center;
+    height: 25px;
+}
+.hezi2 {
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    background-color: #3498db;
+    margin-left: 130px;
+    margin-top: -25px;
+    display: none;
+}
+.hezi2 a {
+    text-align: center;
+    height: 25px;
+}
+
+.yz1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.yz2{
+    top: -100px;
+    left: 100px;
+    position: absolute;
+}
+.yz3 {
+    top: -200px;
+    left: 200px;;
+    position: absolute;
+}
+.yz4 {
+    top: -250px;
+    left: 300px;;
+    position: absolute;
+}
+.yz5 {
+    top: -300px;
+    left: 400px;;
+    position: absolute;
+}
+.yz6 {
+    top: -500px;
+    left: 600px;;
+    position: absolute;
+}
+.yz7 {
+    top: -500px;
+    left: 600px;;
+    position: absolute;
+}
+
+

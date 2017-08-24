@@ -1,0 +1,21 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, button, p, blockquote, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video{ margin:0; padding:0; }
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+h1, h2, h3, h4, h5, h6 { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+address, caption, cite, code, dfn, em, strong, th, var, optgroup { font-style:normal; font-weight:normal; }
+fieldset, img { border:0; }
+img { vertical-align:top; } /* 解决ie6下边间距bug */
+ul, ol, li { list-style:none; }
+input, button, select, lable { font:100% Arial; vertical-align:middle; overflow:visible; }/* 解决表单元素与文本的对齐问题 */
+select { height:20px; line-height:20px; }
+a { text-decoration:none;}
+a:hover { text-decoration:no-underline;
+}
+body { font: 12px/1.5 Arial, sans-serif; }
+html,body{height:100%;}
+
+*{
+padding: 0;
+    margin: 0;
+}
